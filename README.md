@@ -23,7 +23,7 @@ Now you need to put it in the json part of the extension:
 
 The Following Format for the json should look like this:
 ```
-{
+[{
   "domain": "Somedomain.com",
   "hostOnly": false or true,
   "httpOnly": false or true,
@@ -34,7 +34,8 @@ The Following Format for the json should look like this:
   "session": false or true,
   "storeId": null,
   "value": "Some Value"
-},
+}]
 ```
 
-Just Plug in into here
+Just Plug in into this format and there you go you got sessions of logins of website with just stealing cookies
+<img width="500px" src="jsoncookies.PNG">
