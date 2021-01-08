@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Post</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <form action="/cookies" method="POST" id="form">
+        <div class="info">
+            <input type="text" name="data" placeholder="Enter data">
+            <input type="submit" id="submit">
+        </div>
+    </form>
+    <script>
+        $(document).ready(()=>{
+            $('#form').submit((e)=>{
+                e.preventDefault();
+                $.ajax({
+                    url : '/cookies',
+                    type : 'post',
+                    contentType : 'application/json',
+                    data : JSON.stringify($('#form').serializeArray()),
+                    success : (response) =>{
+                        console.log('success got response')
+                        console.log(response);
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>
