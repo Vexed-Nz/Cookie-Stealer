@@ -38,4 +38,4 @@ The Following Format for the json should look like this:
 ```
 
 Just Plug in into this format and there you go you got sessions of logins of website with just stealing cookies
-<img width="500px" src="jsoncookies.PNG">
+<img width="350px" src="jsoncookies.PNG">
